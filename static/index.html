@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimodal Search</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Multimodal Search</h1>
+            <p class="subtitle">Search documents using natural language</p>
+        </header>
+
+        <main>
+            <div class="search-box">
+                <input type="text" id="query" placeholder="Search for information, images, or concepts..."
+                    autocomplete="off">
+                <button id="search-btn">Search</button>
+            </div>
+
+            <div class="filters">
+                <label>
+                    <input type="radio" name="mode" value="all" checked> All
+                </label>
+                <label>
+                    <input type="radio" name="mode" value="text"> Text Only
+                </label>
+                <label>
+                    <input type="radio" name="mode" value="image"> Images Only
+                </label>
+                <label class="top-k">
+                    Results:
+                    <select id="top-k">
+                        <option value="5">5</option>
+                        <option value="10" selected>10</option>
+                        <option value="20">20</option>
+                    </select>
+                </label>
+            </div>
+
+            <div id="stats" class="stats"></div>
+            <div id="results" class="results"></div>
+        </main>
+
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+
+</html>

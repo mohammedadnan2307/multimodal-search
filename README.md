@@ -129,7 +129,3 @@ The system supports two embedding modes:
 - PyTorch 2.0+ (for CLIP)
 - 4GB+ RAM recommended
 - GPU optional (CPU works fine)
-
-## License
-
-MIT License - see [LICENSE](LICENSE) for details.
